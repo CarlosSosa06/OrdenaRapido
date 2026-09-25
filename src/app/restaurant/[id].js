@@ -9,7 +9,6 @@ export default function DetalleRestScreen() {
       <View style={styles.topSection}>
         <View style={styles.logoPlaceholder} />
         <View style={styles.infoSection}>
-          {/* Usamos las variables dinámicas */}
           <Text style={styles.title}>{name}</Text>
           <Text style={styles.detailsText}>{distance}   {rating} {stars}</Text>
           <Text style={styles.detailsText}>{category}</Text>
@@ -18,7 +17,6 @@ export default function DetalleRestScreen() {
       </View>
 
       <View style={styles.descriptionContainer}>
-        {/* Aquí mostramos la descripción dinámica */}
         <Text style={styles.descText}>{description}</Text>
         
         <View style={styles.line} />

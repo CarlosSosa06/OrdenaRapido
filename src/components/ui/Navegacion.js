@@ -3,7 +3,7 @@ import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function Navegacion() {
   const mostrarAviso = () => {
-    Alert.alert("No disponible");
+    Alert.alert("Aviso", "Pantalla no implementada en esta fase del proyecto.");
   };
 
   return (
@@ -16,14 +16,12 @@ export default function Navegacion() {
 
       <View style={styles.divider} />
 
-      {/* Botón visual sin ruta */}
       <TouchableOpacity style={styles.tab} onPress={mostrarAviso}>
         <Text style={styles.textInactive}>Mapa</Text>
       </TouchableOpacity>
 
       <View style={styles.divider} />
 
-      {/* Botón visual sin ruta */}
       <TouchableOpacity style={styles.tab} onPress={mostrarAviso}>
         <Text style={styles.textInactive}>Config.</Text>
       </TouchableOpacity>

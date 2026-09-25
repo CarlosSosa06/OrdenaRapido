@@ -2,6 +2,7 @@ import { Link } from 'expo-router';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function Productos({ item }) {
+  // Pasamos todos los datos del restaurante como parámetros
   return (
     <Link href={{ pathname: `/restaurant/${item.id}`, params: item }} asChild>
       <TouchableOpacity style={styles.card} activeOpacity={0.7}>
